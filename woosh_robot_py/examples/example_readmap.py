@@ -38,10 +38,12 @@ def read_map_info(filepath):
             print("  Dock位置:")
             print(f"    x: {storage.pose.dock.x}")
             print(f"    y: {storage.pose.dock.y}")
+            print(f"    theta: {storage.pose.dock.theta}")  # 添加dock朝向
             
             print("  实际位置:")
             print(f"    x: {storage.pose.real.x}")
             print(f"    y: {storage.pose.real.y}")
+            print(f"    theta: {storage.pose.real.theta}")  # 添加实际朝向
             
             print("  导航设置:")
             print(f"    到达方式: {storage.nav.arr}")
